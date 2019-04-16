@@ -11,3 +11,11 @@ function example() {
 }
 example(); // change the value of outsideExxample to Second String
 console.log(outsideExample); // prints Second String
+
+
+var outsideExample = "First string";
+if (true) {
+    var outsideExample = "Second string"; // reinitialize outsideExample to Second String
+    console.log(outsideExample); // prints Second String
+}
+console.log(outsideExample); // of course this should be Second String also
