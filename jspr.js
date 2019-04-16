@@ -30,3 +30,26 @@ example2(); // false
 var example2 = function() {
     console.log("Ran the example");
 }
+
+
+var rel = getRelationship(2, 3);
+console.log(rel);
+
+function getRelationship(x,y){
+
+    if(x === y){
+        return 'x  = y';
+    }
+    else if(x > y){
+        return 'x is > y';
+    }
+    else if(x < y){
+    return 'x is  <   y'
+    } 
+    else {
+        return "Can't compare relationships because "+x+" and "+y+" [is]/[are] not [a] number[s].";
+    }
+
+
+
+}
