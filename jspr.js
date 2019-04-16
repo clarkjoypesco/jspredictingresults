@@ -19,3 +19,14 @@ if (true) {
     console.log(outsideExample); // prints Second String
 }
 console.log(outsideExample); // of course this should be Second String also
+
+
+example1(); // true
+function example1() {
+    console.log("Ran the example");
+}
+
+example2(); // false
+var example2 = function() {
+    console.log("Ran the example");
+}
