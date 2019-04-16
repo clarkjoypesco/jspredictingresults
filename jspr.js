@@ -50,6 +50,42 @@ function getRelationship(x,y){
         return "Can't compare relationships because "+x+" and "+y+" [is]/[are] not [a] number[s].";
     }
 
-
-
 }
+
+
+
+var moonWalkers = [
+    "Neil Armstrong",
+    "Buzz Aldrin",
+    "Pete Conrad",
+    "Alan Bean",
+    "Alan Shepard",
+    "Edgar Mitchell",
+    "David Scott",
+    "James Irwin",
+    "John Young",
+    "Charles Duke",
+    "Eugene Cernan",
+    "Harrison Schmitt"
+  ];
+  
+  function alphabetizer(names) {
+      newNames = [];
+
+      for(name in names){
+          newName = names[name].split(" ");
+          if(newName.length > 2){
+            newNames.push(newName[1] + ', ' + newName[0] + ' ' + newName[2]);
+          } else {
+            newNames.push(newName[1] + ', ' + newName[0]);
+          }
+         
+      }
+
+      return newNames
+      // Your code goes here!
+  }
+  
+  // Try logging your results to test your code!
+  console.log(alphabetizer(moonWalkers));
+
